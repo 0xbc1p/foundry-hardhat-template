@@ -1,6 +1,17 @@
-[default]
-src = 'src'
-out = 'out'
-libs = ['lib']
+[profile.default]
+src = "src"
+out = "out"
+libs = ["lib"]
+solc = '0.8.21'
 
-# See more config options https://github.com/foundry-rs/foundry/tree/master/config
+[rpc_endpoints]
+mainnet = "https://rpc.ankr.com/eth"
+go = "https://rpc.ankr.com/eth_goerli"
+fantom-testnet = "https://rpc.ankr.com/fantom_testnet"
+bsc = "https://rpc.ankr.com/bsc"
+
+[etherscan]
+mainnet = { key = "V9XZX97TN8AXB9NT21Z2WHAJ3H9TNA34SI", chain = "mainnet", url = "https://api.etherscan.io/api/" }
+go = { key = "V9XZX97TN8AXB9NT21Z2WHAJ3H9TNA34SI", url = "https://api-goerli.etherscan.io/api/" }
+bsc = { key = "6PQ61M1I7G8CNG4F5ZR9YZ2C6MW8DVCBEV", url = "https://api.bscscan.com/api/" }
+fantom-testnet = { key = "FKVSTC78G8UJ2JM1RH457U99KYA4HWPU18", url = "https://api-testnet.ftmscan.com/api/", chain = "fantom-testnet" }
