@@ -14,7 +14,7 @@ import * as dotenv from "dotenv";
 dotenv.config();
 
 const config: HardhatUserConfig = {
-  solidity: "0.8.21",
+  solidity: "0.8.24",
   networks: {
     testnet: {
       url: "https://rpc.ankr.com/fantom_testnet",
@@ -32,6 +32,10 @@ const config: HardhatUserConfig = {
       url: "https://nd-072-371-713.p2pify.com/fe6358e09128eff5f6afb11fcade6b83",
       accounts: [process.env.PRIVATE_KEY as string],
     },
+    sepolia: {
+      url: "https://1rpc.io/sepolia",
+      accounts: [process.env.PRIVATE_KEY as string],
+    }.
     hardhat: {
       forking: {
         url: "https://rpc.ankr.com/eth",
